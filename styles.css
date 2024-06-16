@@ -1,0 +1,325 @@
+:root{
+    --grey: #09ad09;
+}
+*{
+    margin:0;
+    padding:0;
+    color: #242122;
+    box-sizing: border-box;
+    font-family: "Varela", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+header{
+    position: fixed;
+    top:0;left:0;right:0;
+    background: #cee6fa;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+hr{
+    display: block;
+    height: 2px;
+    background-color: black;
+}
+.icons > a{
+    margin: 10px;
+}
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+header .nav{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+}
+.nav > a{
+    margin: 5px;
+}
+header .nav a:hover{
+    color: var(--grey);
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: 0.1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+.main-intro{
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.main-intro > div{
+    min-width: 35%;
+}
+.left-intro{
+    font-size: 3rem;
+    margin:0px 50px;
+    padding: 80px;
+}
+.right-gif > img{
+    height: 300px;
+    width: auto;
+}
+.span-text{
+    color:#18b127;
+}
+.brief-intro{
+    font-size: 1.8em;
+    padding: 125px 180px;
+    text-align: center;
+}
+.about-me > p{
+    color: #5b5454;
+}
+.about-me-title{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:25px;
+}
+.profile-pic{
+    display: flex;
+    margin: 50px;
+    margin-bottom: 0px;
+    justify-content: center;
+}
+.profile-pic > img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.head-section{
+    margin: 50px;
+}
+.title-div{
+    font-size: 3rem;
+    margin: 80px 0px;
+}
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logos > div{
+    margin: 5px;
+}
+.elem > p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+.elem > img{
+    height: 150px;
+    width: 150px;
+    border: 1.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    object-fit: cover;
+}
+.projects-div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.projects-div > div{
+    height: 300px;
+    width: 250px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: rgb(228, 226, 226);
+}
+.sect > div{
+    height: 150px;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.sect:hover{
+    box-shadow: 0px 2px 8px 0.5px rgb(13, 255, 0),4px 0px 8px 0.5px #2b00ff;
+    cursor: pointer;
+}
+.proj-object{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+}
+.proj-object > img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+.sect > p{
+    margin: 12px;
+    margin-top: 0px;
+    font-size: 12px;
+}
+.prof-logo > img{
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/*********   Footer Section ********/
+footer > div{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    background: #b0b4c6;
+}
+.contact > .my-name{
+    width: 80%;
+    margin: 30px;
+    font-size: 24px;
+}
+.contact > .info {
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 5px;
+}
+.info > p{
+    margin: 5px;
+    margin-left: 0px;
+}
+
+
+
+
+/******** Media Queries *********/
+@media(max-width: 380px){
+    .icons{
+        display: none;
+    }
+    .logo{
+        margin-right: 25%;
+    }
+    .right-gif > img{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+    }
+    .my-name{
+        display: none;;
+    }    
+}
+@media(max-width: 450px){
+    html{
+        font-size: 50%;
+        scroll-behavior: smooth;
+    }
+    .right-gif > img{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        width: 380px;
+    }
+    .profile-pic > img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+}
+@media(max-width: 768px){
+    header .fa-bars{
+        display: block;
+    }
+    header .nav{
+        position: absolute;
+        top: 100%;
+        left: 0;right:0;
+        background: #eeeeee;
+        border-top: 0.1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+    header #toggler:checked ~ .nav{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+    header .nav a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #ffffff;
+        border: 0.1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+    .contact > .my-name{
+        font-size: 18px;
+    }
+}
+@media(max-width: 991px){
+    html{
+        font-size: 55%;
+        scroll-behavior: smooth;
+    }
+    header{
+        padding: 2rem;
+    }
+    .main-intro{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 80px 0px;
+    }
+    .main-intro > div{
+        min-width: 100%;
+    }
+    .brief-intro{
+        font-size: 1.8em;
+        padding: 15px 50px;
+        text-align: center;
+    }
+    .right-gif{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(min-width: 991px) and (max-width : 1150px){    
+    .left-intro{
+        font-size: 3rem;
+        margin:30px 50px;
+        padding: 0px;
+    }
+    .right-gif > img{
+        height: 250px;
+        width: 380px;
+    }
+}
